@@ -5,7 +5,7 @@ import { IconContext } from 'react-icons';
 export const ContactList = ({ contacts, handleDelete }) => {
   return (
     <List>
-      {(contacts).map(({ id, name, number }) => (
+      {contacts && contacts.map(({ id, name, number }) => (
         <Item key={id}>
           <Row>{name}</Row>
           <Row> {number}</Row>
